@@ -8,8 +8,10 @@ function App() {
     <div className="flex-main">
       {/* This is the container */}
       <h1 className="red-border flex-box-col width-60 margin-10 padding-20">Control Panel for Distributed Node Training</h1>
-      <Controls></Controls>
-      <Performance></Performance>
+      <div className="flex-main-row width-100">
+        <Controls></Controls>
+        <Performance></Performance>
+      </div>
     </div>
   );
 }

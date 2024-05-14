@@ -95,7 +95,7 @@ export default function Strategy() {
 
   return (
     <div className="red-border flex-box padding-5 margin-5">
-      <div className="red-border margin-5 width-30">
+      <div className="red-border margin-5 width-100">
         <h4 className="margin-5 red-border padding-5">Process: {processId} <br></br>Strategy: {lastProcessStrategy}</h4>
         <DropDown
           listName="Strategy"
@@ -118,9 +118,6 @@ export default function Strategy() {
         <TextBox fieldName="Error Probability" sendData={receiveErrorProb}></TextBox>
         <button className="button-style" onClick={handleTrain}>Train</button>
         <button className="button-style button-red" onClick={handleTrainAbort}>Abort</button>
-      </div>
-      <div className="red-border width-70 margin-5 flex-box-col">
-        <img className="width-100" src="/static/node_topology.png"></img>
       </div>
       
     </div>
